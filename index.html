@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Převedení Celsia</title>
     <script>
         function temperatureConverter(valNum) {
   valNum = parseFloat(valNum);
   document.getElementById("outputFahrenheit").innerHTML = (valNum*1.8)+32;
 }
     </script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>
+    <div id="showcase">
+    <form class="converter">
+    <div class="celsius" >
+    <p class="p">
         <label>Celsius</label>
         <input id="inputCelsius" type="number" placeholder="Celsius"
         oninput="temperatureConverter(this.value)"
         onchange="temperatureConverter(this.value)">
       </p>
       <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+    </div>
+    </form>
+
+    </div>
 </body>
 </html>

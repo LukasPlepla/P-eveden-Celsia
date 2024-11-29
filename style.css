@@ -1,0 +1,17 @@
+#showcase {
+    height: 100vh;
+}
+.converter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+    height: 100%;
+}
+
+.celsius {
+    border: solid black;
+    padding: 1rem;
+    border-radius: 5px;
+}
