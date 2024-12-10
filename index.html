@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Převedení Celsia</title>
-    <script>
-        function temperatureConverter(valNum) {
-  valNum = parseFloat(valNum);
-  document.getElementById("outputFahrenheit").innerHTML = (valNum*1.8)+32;
-}
-    </script>
-    <link rel="stylesheet" href="./style.css">
+    <title>Převodník teplot</title>
+    <script src="./js/celsia.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="showcase">
-    <form class="converter">
-    <div class="celsius" >
-    <p class="p">
-        <label>Celsius</label>
-        <input id="inputCelsius" type="number" placeholder="Celsius"
-        oninput="temperatureConverter(this.value)"
-        onchange="temperatureConverter(this.value)">
-      </p>
-      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+    <h1>Převodník teplot: Celsius na Fahrenheit</h1>
+    
+    <div>
+        <label for="celsius">Teplota ve stupních Celsia:</label>
+        <input type="number" id="celsius" placeholder="Zadejte teplotu">
+        <button id="convert">Převést</button>
     </div>
-    </form>
-
-    </div>
+    
+    <div class="result" id="result"></div>
 </body>
 </html>
