@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Získání reference na elementy
-    const celsiusInput = document.getElementById('celsius');
-    const convertButton = document.getElementById('convert');
-    const resultDiv = document.getElementById('result');
+    const celsiusInput = document.querySelector('#celsius');
+    const convertButton = document.querySelector('#convert');
+    const resultDiv = document.querySelector('#result');
 
     // Přidání event listeneru na tlačítko
     convertButton.addEventListener('click', function() {
